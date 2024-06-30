@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <script>
+            // let x=20;
+            // while (x>=10){
+            //     console.log(`${x}\n`);
+            //     --x;
+            // }
+            // console.log(`value outside loop - ${x}`);
+            // for (let x=0; x<=25; x++){
+            //     console.log(`${x}\n`);
+            // }
+            //console.log(x);
+
+            //let myArray = ['Violet','Indigo','Blue','Green','Yellow','Orange','Red'];
+
+            // for (let eachColor of myArray){
+            //     console.log(`Current color in the rainbow - ${eachColor}\n`);
+            // }
+
+            // for (let i=0; i<myArray.length; i++){
+            //     console.log(`Current color in the rainbow - ${myArray[i]}`);
+            // }
+
+            // for ( let[key,value] of myArray.entries()){
+            //     console.log(`Index ${key} ---- Value ${value}`);
+            // }
+
+            myDict = {
+                name : "Shankar",
+                age : 42,
+                sex : "male"
+            }
+
+            for ( let [key,value] in Object.entries(myDict)){
+                console.log(`${key} has value ${value}`);
+            }
+
+
+        </script>
+    </body>
+</html>

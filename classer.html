@@ -1,0 +1,60 @@
+<html>
+    <body>
+        <script>
+            class Employee{
+                constructor(name,dept,salary){
+                    this.name = name;
+                    this.dept = dept;
+                    this.salary = salary;
+                }
+                giveHike(incr){
+                    if (incr>0){
+                        this.salary += incr;
+                    } else {
+                        console.log(`Hike cannot be in negative`);
+                    }
+                }
+                compareSal(givenEmp){
+                    let deltaSal = givenEmp.salary - this.salary;
+                    return deltaSal;
+                }
+            }
+
+            class Manager extends Employee{
+                constructor(name,dept,salary){
+                    super(name,dept,salary);
+                    this.num_of_teammates = 50;
+                }
+            }
+
+            class Director extends Employee{
+                attack(Manager){
+                    if (this.compareSal(Manager) < 0 ) {
+                        console.log(`You are a gr8 director!`);
+                    } else {
+                        console.log(`Your are worthless ... pls resign`);
+                    }
+                }
+            }
+
+            let mgr = new Manager('Steve Jackson','IT',125000);
+            let dir = new Director('Jagadeesh','Mgmt',50000);
+            console.log(mgr.num_of_teammates);
+            console.log(`Director's salary before hike - ${dir.salary}`);
+            dir.attack(mgr);
+            dir.giveHike(100000);
+            console.log(`Director's salary after hike - ${dir.salary}`);
+            dir.attack(mgr);
+
+            // let empl1 = new Employee("Shankar","IT",555);
+            // console.log(`My name is ${empl1.name}`);
+            // console.log(`Before Hike -- ${empl1.salary}`);
+            // empl1.giveHike(-500);
+            // console.log(`After Hike -- ${empl1.salary}`);
+
+            // let empl2 = new Employee("Abee","HR",2341234);
+            // empl2.giveHike(555);
+            // console.log(`After Hike -- ${empl2.salary}`);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            function is_pallindrome(word){
+                let orig=word;
+                let rev="";
+
+                for (let x=word.length-1;x>=0;x--){
+                    rev+=word[x];
+                }
+
+                if (orig === rev){
+                    console.log(`${word} is a pallindrome`);
+                } else {
+                    console.log(`${word} is NOT a pallindrome`);
+                }
+            }
+        
+            console.log(is_pallindrome('sky'));  
+        </script>
+    </body>
+</html>

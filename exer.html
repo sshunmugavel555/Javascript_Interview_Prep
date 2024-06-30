@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <script>
+            // let myName = "shankar";
+            
+            // for (let [eachC,index] of myName.split("").entries()){
+            //     console.log(`${eachC}   ${index}`);
+            // }
+            // let echoNumber = num => {
+            //     let lookup=['one','two','three','four','five'];
+            //     return lookup[num-1]
+            // }
+            // console.log(echoNumber(5));
+            // let cnt=0;
+            // let coun = () => {
+            //     cnt++
+            //     console.log(`Calling ${cnt} time`);
+            // }
+            // coun();
+            // coun();
+            // coun();
+            // let currDT = () => {
+            //     return new Date();
+            // }
+            // console.log(currDT());
+
+            function makeWrapper(pre,suf){
+                return function(base){
+                    return pre+base+suf;
+                }
+            }
+            let wrap = makeWrapper("abc","xyz");
+            console.log(wrap("shankar"));
+        </script>
+    </body>
+</html>
