@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            function in_place_reverse(sent){
+                let wordA = sent.split(" ");
+
+                let revA = [];
+                
+                for (let eachW of wordA) {
+                    let revStr = "";
+                    for (let x=eachW.length-1;x>=0;x--){
+                        revStr += eachW[x];
+                    }
+                    revA.push(revStr);
+                }
+
+                let revSent =  revA.join(" ")
+
+                console.log(`In place reverse of "${sent}" --- "${revSent}"`);
+            }
+
+            in_place_reverse("shankar");
+        </script>
+    </body>
+</html>
