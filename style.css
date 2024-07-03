@@ -1,0 +1,25 @@
+h1{
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+#heading{
+    font-size: 48px;
+}
+
+strong{
+    color: blue;
+}
+
+p strong{
+    font-size: 28px;
+}
+
+.highlight{
+    background-color: yellow;
+}
+
+.highlight strong{
+    background-color: orange;
+}
